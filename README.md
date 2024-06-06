@@ -15,8 +15,8 @@ This application allows you to interact with a GPT-4 model through a web interfa
 ### 1. Clone the Repository
 
 ```sh
-git clone https://your-repo-url.git
-cd your-repo
+git https://github.com/curlyphries/GPT-4-API-Web-App.git
+cd GPT-4-API-Web-App.git
 ```
 
 ### 2. Create a Virtual Environment
