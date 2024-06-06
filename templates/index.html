@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPT-4 Web Application</title>
+</head>
+<body>
+    <h1>GPT-4 Web Application</h1>
+    <form method="post" action="{{ url_for('prompt') }}">
+        <label for="prompt">Enter your prompt:</label>
+        <input type="text" id="prompt" name="prompt" required>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Conversation History</h2>
+    <ul>
+        {% for entry in history %}
+            <li>
+                <strong>Prompt:</strong> {{ entry.prompt }}<br>
+                <strong>Response:</strong> {{ entry.response }}<br>
+                <strong>Timestamp:</strong> {{ entry.timestamp }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
